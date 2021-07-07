@@ -1,0 +1,31 @@
+.leader {
+  padding: 3.1875rem 0 4.0625rem;
+  .container {
+    max-width: 72.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+  .leader__img {
+    flex: 1.8;
+  }
+  .leader__text {
+    margin-top: 17.5rem;
+    margin-left: -14rem;
+    background-color: $white;
+    padding: 5.6875rem 4.375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    flex: 1;
+    @include breakpoint-down(medium) {
+      margin-top: 1rem;
+      margin-left: 0;
+      padding: 1.25rem;
+    }
+  }
+}

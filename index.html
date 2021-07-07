@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app/scss/main.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay"></div>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="navbar__logo"
+            ><img src="./images/logo.svg" alt="logo"
+          /></a>
+          <button class="btn btn--menu">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="hamburger"
+              class="hamburger"
+            />
+          </button>
+          <div class="navbar__menu">
+            <a href="#" class="navbar__links">About</a>
+            <a href="#" class="navbar__links">Careers</a>
+            <a href="#" class="navbar__links">Events</a>
+            <a href="#" class="navbar__links">Products</a>
+            <a href="#" class="navbar__links">Support</a>
+          </div>
+        </nav>
+        <h1 class="heading">Immersive experiences that deliver</h1>
+      </div>
+    </header>
+    <section class="leader">
+      <div class="container">
+        <div class="leader__img">
+          <picture
+            ><source
+              media="(max-width: 39.9375em)"
+              srcset="/images/mobile/image-interactive.jpg" />
+            <img
+              src="/images/desktop/image-interactive.jpg"
+              alt="man wearing VR headset"
+          /></picture>
+        </div>
+        <div class="leader__text">
+          <h2 class="leader__heading">The leader in interactive VR</h2>
+          <p class="description">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="creation">
+      <div class="container">
+        <div class="creation__content">
+          <h2 class="creation__heading">OUR CREATIONS</h2>
+          <button class="btn btn-see-1">SEE ALL</button>
+        </div>
+        <div class="creation__card">
+          <div class="card card-1">
+            <p class="card-heading">
+              Deep <br />
+              Earth
+            </p>
+          </div>
+          <div class="card card-2">
+            <p class="card-heading">Night arcade</p>
+          </div>
+          <div class="card card-3">
+            <p class="card-heading">Soccer team VR</p>
+          </div>
+          <div class="card card-4">
+            <p class="card-heading">Grid</p>
+          </div>
+          <div class="card card-5">
+            <p class="card-heading">From up above VR</p>
+          </div>
+          <div class="card card-6">
+            <p class="card-heading">Pocket borealis</p>
+          </div>
+          <div class="card card-7">
+            <p class="card-heading">The curiosity</p>
+          </div>
+          <div class="card card-8">
+            <p class="card-heading">Make it fisheye</p>
+          </div>
+        </div>
+        <button class="btn btn-see-2">SEE ALL</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__links">
+          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+          <div class="links">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="social-icon">
+            <a href="#" class="icon"
+              ><img src="./images/icon-facebook.svg" alt="facebook"
+            /></a>
+            <a href="#" class="icon"
+              ><img src="./images/icon-twitter.svg" alt="twitter"
+            /></a>
+
+            <a href="#" class="icon"
+              ><img src="./images/icon-pinterest.svg" alt="pinterest"
+            /></a>
+            <a href="#" class="icon"
+              ><img src="./images/icon-instagram.svg" alt="instagram"
+            /></a>
+          </div>
+          <small>© 2021 Loopstudios. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+    <!-- <img src="/images/logo.svg" alt="logo">
+  About
+  Careers
+  Events
+  Products
+  Support
+
+  Immersive experiences that deliver
+
+  The leader in interactive VR
+
+  Founded in 2011, Loopstudios has been producing world-class virtual reality 
+  projects for some of the best companies around the globe. Our award-winning 
+  creations have transformed businesses through digital experiences that bind 
+  to their brand.
+
+  Our creations
+
+  See all
+
+  Deep earth
+  Night arcade
+  Soccer team VR
+  The grid
+  From up above VR
+  Pocket borealis
+  The curiosity
+  Make it fisheye
+
+  About
+  Careers
+  Events
+  Products
+  Support
+
+  © 2021 Loopstudios. All rights reserved.
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>

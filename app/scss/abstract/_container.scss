@@ -1,0 +1,9 @@
+.container {
+  max-width: 70.5rem;
+  width: 100%;
+  margin: 0 auto;
+  &--small {
+    @extend .container;
+    max-width: 62rem;
+  }
+}
