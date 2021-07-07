@@ -7,10 +7,10 @@ const active = () => {
   navbarMenu.classList.toggle("active");
   body.classList.toggle("disabled-scroll");
   if (navbarMenu.classList.contains("active")) {
-    icon.src = "/images/icon-close.svg";
+    icon.src = "./images/icon-close.svg";
     button.setAttribute("aria-expanded", "false");
   } else {
-    icon.src = "/images/icon-hamrburger.svg";
+    icon.src = "./images/icon-hamrburger.svg";
     button.setAttribute("aria-expanded", "true");
   }
 };
