@@ -149,7 +149,7 @@ h2 {
 }
 @media (max-width: 39.9375em) {
   .header {
-    background: url("/images/mobile/image-hero.jpg") no-repeat center/cover;
+    background: url("../images/mobile/image-hero.jpg") no-repeat center/cover;
   }
 }
 .header .btn--menu {
