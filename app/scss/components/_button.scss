@@ -1,0 +1,26 @@
+.btn {
+  background-color: $white;
+  color: $black;
+  padding: 0.8rem 2.9rem;
+  border: 2px solid $black;
+  letter-spacing: 4px;
+  font-size: 1.1rem;
+  font-family: "Alata", sans-serif;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+.btn-see-2 {
+  display: none;
+}
+@media (max-width: 48.75em) {
+  .btn-see-1 {
+    display: none;
+  }
+  .btn-see-2 {
+    display: block;
+    margin: 0 auto;
+  }
+}

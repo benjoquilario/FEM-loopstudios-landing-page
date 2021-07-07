@@ -1,0 +1,131 @@
+.creation {
+  padding: 0.625rem 0.625rem 7.5rem;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__card {
+    margin: 4.0625rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+    justify-items: center;
+    align-items: center;
+    @include breakpoint-up(medium) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .card {
+      display: flex;
+      position: relative;
+      justify-content: flex-start;
+      align-items: flex-end;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 100%;
+      height: 11rem;
+      transition: all 0.9s;
+      &:hover {
+        color: $black;
+        opacity: 0.5;
+        transform: scale(1.04);
+        transition: all 0.4s ease-in-out;
+      }
+      &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: background-color 0.3s ease;
+      }
+      @include breakpoint-up(large) {
+        height: 29rem;
+      }
+      &-heading {
+        font-size: 1.5rem;
+        color: $white;
+        text-transform: uppercase;
+        padding: 1.6875rem;
+        z-index: 1;
+        @include breakpoint-up(large) {
+          font-size: 1.875rem;
+          align-self: flex-end;
+        }
+      }
+    }
+    .card-1 {
+      background: url("../images/mobile/image-deep-earth.jpg") no-repeat center /
+        cover;
+    }
+    .card-2 {
+      background: url("../images/mobile/image-night-arcade.jpg") no-repeat
+        center / cover;
+    }
+    .card-3 {
+      background: url("../images/mobile/image-soccer-team.jpg") no-repeat center /
+        cover;
+    }
+    .card-4 {
+      background: url("../images/mobile/image-grid.jpg") no-repeat center /
+        cover;
+    }
+    .card-5 {
+      background: url("../images/mobile/image-from-above.jpg") no-repeat center /
+        cover;
+    }
+    .card-6 {
+      background: url("../images/mobile/image-pocket-borealis.jpg") no-repeat
+        center / cover;
+    }
+    .card-7 {
+      background: url("../images/mobile/image-curiosity.jpg") no-repeat center /
+        cover;
+    }
+    .card-8 {
+      background: url("../images/mobile/image-fisheye.jpg") no-repeat center /
+        cover;
+    }
+  }
+}
+@media (min-width: 64em) {
+  .creation__card {
+    .card-1 {
+      background: url("../images/desktop/image-deep-earth.jpg") no-repeat center /
+        cover;
+    }
+    .card-2 {
+      background: url("../images/desktop/image-night-arcade.jpg") no-repeat
+        center / cover;
+    }
+    .card-3 {
+      background: url("../images/desktop/image-soccer-team.jpg") no-repeat
+        center / cover;
+    }
+    .card-4 {
+      background: url("../images/desktop/image-grid.jpg") no-repeat center /
+        cover;
+    }
+    .card-5 {
+      background: url("../images/desktop/image-from-above.jpg") no-repeat center /
+        cover;
+    }
+    .card-6 {
+      background: url("../images/desktop/image-pocket-borealis.jpg") no-repeat
+        center / cover;
+    }
+    .card-7 {
+      background: url("../images/desktop/image-curiosity.jpg") no-repeat center /
+        cover;
+    }
+    .card-8 {
+      background: url("../images/desktop/image-fisheye.jpg") no-repeat center /
+        cover;
+    }
+  }
+}

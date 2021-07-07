@@ -1,0 +1,94 @@
+.header {
+  height: 40.625rem;
+  background: url("/images/desktop/image-hero.jpg") no-repeat center/ cover;
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  @include breakpoint-down(small) {
+    background: url("/images/mobile/image-hero.jpg") no-repeat center/ cover;
+  }
+  .btn--menu {
+    z-index: 10;
+    position: relative;
+    @include breakpoint-up(medium) {
+      display: none;
+    }
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: clamp(1rem, 5.5vw, 8rem) 0.625rem;
+    height: 5rem;
+    &__logo {
+      z-index: 10;
+    }
+    &__menu {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 3.75rem);
+      grid-row-gap: 1.25rem;
+      position: absolute;
+      top: -62.5rem;
+      @include breakpoint-up(medium) {
+        top: 100%;
+        display: flex;
+        position: unset;
+        gap: 1.9375rem;
+      }
+    }
+    &__menu.active {
+      z-index: 9;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      padding-top: 6.25rem;
+      background: $black;
+      height: 100vh;
+      opacity: 1;
+      font-size: 1.5rem;
+      transition: all 0.7s ease-in-out;
+      @include breakpoint-up(medium) {
+        position: unset;
+        z-index: unset;
+        background: unset;
+        height: unset;
+        opacity: unset;
+        font-size: unset;
+        padding: unset;
+      }
+    }
+    .navbar__links {
+      color: white;
+      position: relative;
+
+      @include breakpoint-down(small) {
+        padding-left: 0.625rem;
+      }
+      &:hover {
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          right: 0;
+          left: 0;
+          background: $white;
+          height: 2px;
+          width: 100%;
+          @include breakpoint-down(small) {
+            width: 20%;
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

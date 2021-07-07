@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Alata", sans-serif;
+  line-height: 1.4;
+  font-size: 15px;
+}
+body.disabled-scroll {
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
