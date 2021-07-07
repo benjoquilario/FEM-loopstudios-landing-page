@@ -8,15 +8,6 @@
   max-width: 62rem;
 }
 
-@keyframes animate-hero {
-  from {
-    transform: translateY(-150);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-
 html {
   box-sizing: border-box;
 }
@@ -145,7 +136,7 @@ h2 {
 
 .header {
   height: 40.625rem;
-  background: url("/images/desktop/image-hero.jpg") no-repeat center/cover;
+  background: url("../images/desktop/image-hero.jpg") no-repeat center/cover;
   position: relative;
 }
 .header .overlay {
