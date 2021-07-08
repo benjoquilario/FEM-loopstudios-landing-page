@@ -10,7 +10,7 @@ const active = () => {
     icon.src = "./images/icon-close.svg";
     button.setAttribute("aria-expanded", "true");
   } else {
-    icon.src = "./images/icon-hamrburger.svg";
+    icon.src = "./images/icon-hamburger.svg";
     button.setAttribute("aria-expanded", "false");
   }
 };
